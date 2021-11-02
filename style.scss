@@ -1,0 +1,59 @@
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  max-width: 55%;
+  margin: auto;
+
+  h1 {
+    margin-left: 7rem;
+    color: rgb(54, 50, 50);
+  }
+  p {
+    color: rgb(57, 57, 129);
+  }
+}
+
+#wrapper {
+  max-width: 50%;
+  margin: 5rem auto;
+}
+
+.firstCircle {
+  position: relative;
+  height: 100%;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid blue;
+}
+.secondCircle {
+  margin: auto;
+  border-radius: 50%;
+  width: 100px;
+  height: 195px;
+  border: 5px solid blue;
+}
+.verticalLine {
+  position: absolute;
+  margin-left: 45px;
+  border: 2px solid blue;
+  background-color: blue;
+  width: 1px;
+  height: 190px;
+}
+.horizontalBackground {
+  position: absolute;
+  width:202px;
+  height: 100px;
+  margin: 45px -51px;
+  border-radius: 22px;
+  background-color: blue;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
