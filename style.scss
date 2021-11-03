@@ -1,6 +1,6 @@
 html,
 body {
-  overflow: hidden;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -20,41 +20,114 @@ header {
   }
 }
 
-#wrapper {
-  max-width: 50%;
-  margin: 5rem auto;
-}
-
 .firstCircle {
-  position: relative;
-  height: 100%;
-  width: 200px;
+  height: 100px;
+  width: 100px;
+  margin: -6px -5px;
   border-radius: 50%;
   border: 7px solid blue;
+  padding: 7px;
+  text-align: center;
+  justify-content: center;
 }
 .secondCircle {
-  margin: auto;
+  margin: -4px auto;
   border-radius: 50%;
-  width: 100px;
-  height: 195px;
+  width: 50px;
+  height: 100px;
   border: 5px solid blue;
 }
 .verticalLine {
   position: absolute;
-  margin-left: 45px;
+  margin-left: 23px;
   border: 2px solid blue;
   background-color: blue;
   width: 1px;
-  height: 190px;
+  height: 100px;
 }
 .horizontalBackground {
   position: absolute;
-  width:202px;
-  
-  height: 100px;
-  margin: 45px -51px;
-  border-radius: 22px;
+  width: 110px;
+  height: 50px;
+  margin: 23px -30px;
+  border-radius: 12px;
   background-color: blue;
-  border-bottom-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 17%;
+  border-bottom-right-radius: 17%;
+
+  p {
+    font-weight: 700;
+
+    text-align: center;
+    justify-content: center;
+    color: wheat;
+    font-size: 10px;
+  }
+}
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: cadetblue;
+}
+.parent {
+  display: flex;
+  height: 500px;
+}
+
+.gear {
+  transform: scale(2);
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  z-index: 10;
+  background: rgb(160, 14, 14);
+  border: 2px solid grey;
+  border-radius: 50%;
+}
+
+.center {
+  position: relative;
+  margin: auto;
+  top: 20px;
+  z-index: 100;
+  padding: 20px;
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+
+.tooth {
+  position: absolute;
+  top: -25px;
+  left: 80px;
+  width: 20px;
+  height: 250px;
+  border: 2px solid grey;
+  background: rgb(189, 139, 139);
+}
+
+.tooth:nth-child(2) {
+  transform: rotate(30deg);
+}
+
+.tooth:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.tooth:nth-child(4) {
+  transform: rotate(150deg);
+}
+.tooth:nth-child(5) {
+  transform: rotate(180deg);
+}
+.tooth:nth-child(6) {
+  transform: rotate(240deg);
+  background-color: rebeccapurple;
+}
+.tooth:nth-child(7) {
+  transform: rotate(300deg);
+  background-color: rebeccapurple;
 }
