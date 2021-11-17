@@ -1,6 +1,7 @@
 html,
 body {
   box-sizing: border-box;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -8,11 +9,10 @@ body {
 }
 
 header {
-  max-width: 55%;
-  margin: auto;
+  text-align: center;
+  justify-content: center;
 
   h1 {
-    margin-left: 7rem;
     color: rgb(54, 50, 50);
   }
   p {
@@ -25,39 +25,34 @@ header {
   width: 100px;
   margin: -6px -5px;
   border-radius: 50%;
-  border: 7px solid blue;
-  padding: 7px;
-  text-align: center;
-  justify-content: center;
+  border: 3px solid rgb(87, 87, 168);
+  padding: 12px;
 }
 .secondCircle {
-  margin: -4px auto;
+  margin: -14px auto;
   border-radius: 50%;
   width: 50px;
-  height: 100px;
-  border: 5px solid blue;
+  height: 123px;
+  border: 3px solid rgb(87, 87, 168);
 }
 .verticalLine {
   position: absolute;
   margin-left: 23px;
-  border: 2px solid blue;
-  background-color: blue;
+  border: 1px solid rgb(87, 87, 168);
+  background-color: rgb(87, 87, 168);
   width: 1px;
-  height: 100px;
+  height: 123px;
 }
 .horizontalBackground {
   position: absolute;
-  width: 110px;
-  height: 50px;
-  margin: 23px -30px;
-  border-radius: 12px;
-  background-color: blue;
-  border-bottom-left-radius: 17%;
-  border-bottom-right-radius: 17%;
+  width: 127px;
+  height: 45px;
+  margin: 38px -38px;
+  border-radius: 11px;
+  background-color: rgb(87, 87, 168);
 
   p {
     font-weight: 700;
-
     text-align: center;
     justify-content: center;
     color: wheat;
@@ -66,22 +61,28 @@ header {
 }
 footer {
   width: 100%;
-  height: 400px;
-  background-color: cadetblue;
-}
-.parent {
-  display: flex;
-  height: 500px;
+  height: auto;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  padding: 20px;
+
+  h2 {
+    color: white;
+    font-weight: 900;
+  }
+  p {
+    color: white;
+  }
 }
 
 .gear {
   transform: scale(2);
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 220px;
+  height: 220px;
   margin: auto;
   z-index: 10;
-  background: rgb(160, 14, 14);
+  background: rgb(189, 139, 139);
   border: 2px solid grey;
   border-radius: 50%;
 }
@@ -89,7 +90,7 @@ footer {
 .center {
   position: relative;
   margin: auto;
-  top: 20px;
+  top: 25px;
   z-index: 100;
   padding: 20px;
   width: 120px;
@@ -101,11 +102,10 @@ footer {
 
 .tooth {
   position: absolute;
-  top: -25px;
-  left: 80px;
+  top: -20px;
+  left: 95px;
   width: 20px;
   height: 250px;
-  border: 2px solid grey;
   background: rgb(189, 139, 139);
 }
 
@@ -125,9 +125,184 @@ footer {
 }
 .tooth:nth-child(6) {
   transform: rotate(240deg);
-  background-color: rebeccapurple;
 }
 .tooth:nth-child(7) {
   transform: rotate(300deg);
-  background-color: rebeccapurple;
 }
+
+.circleGroup {
+  position: relative;
+  display: flex;
+  width: 600px;
+  height: 600px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  justify-content: center;
+
+  .circle {
+    position: absolute;
+    top: -0.5em;
+    right: -0.5em;
+    z-index: 10;
+    width: 70px;
+    height: 70px;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid grey;
+    font-size: 35px;
+  }
+}
+circle:nth-child(1) {
+  transform: rotate(-400deg) translateX(300px);
+}
+.circle:nth-child(2) {
+  transform: rotate(210deg) translateX(325px);
+}
+
+.circle:nth-child(3) {
+  transform: rotate(155deg) translateX(315px);
+}
+
+.circle:nth-child(4) {
+  transform: rotate(238deg) translateX(330px);
+}
+
+.circle:nth-child(5) {
+  transform: rotate(267deg) translateX(320px);
+}
+.circle:nth-child(6) {
+  transform: rotate(357deg) translateX(300px);
+}
+.circle:nth-child(7) {
+  transform: rotate(390deg) translateX(300px);
+}
+.circle:nth-child(8) {
+  transform: rotate(422deg) translateX(300px);
+}
+.circle:nth-child(9) {
+  transform: rotate(485deg) translateX(310px);
+}
+.circle:nth-child(10) {
+  transform: rotate(453deg) translateX(300px);
+}
+.circle:nth-child(11) {
+  transform: rotate(-177deg) translateX(320px);
+}
+.circle:nth-child(12) {
+  transform: rotate(295deg) translateX(310px);
+}
+.circle:nth-child(13) {
+  transform: rotate(686deg) translateX(300px);
+}
+
+.footerContainer {
+  width: 760px;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+
+  input {
+    width: 220px;
+    height: 40px;
+    margin: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+  textarea {
+    width: 722px;
+    margin: 5px auto;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+  }
+  .checkBox {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(25, 151, 103);
+    border: none;
+    color: wheat;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+#check {
+  width: 20px;
+}
+
+.wordCircle {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 900px;
+  margin: auto;
+  justify-content: center;
+
+
+}
+.paragraphs {
+  position: relative;
+
+  p:nth-child(1) {
+    transform: translateX(225px) translateY(60px);
+    position: absolute;
+  }
+  
+  p:nth-child(2) {
+    transform: translateX(-25px) translateY(155px);
+    position: absolute;
+  }
+  p:nth-child(3) {
+    transform: translateX(-225px) translateY(270px);
+    position: absolute;
+  }
+  p:nth-child(4) {
+    transform: translateX(-170px) translateY(700px);
+    position: absolute;
+  }
+  p:nth-child(5) {
+    position: absolute;
+    transform: translateX(-165px) translateY(420px);
+  }
+  p:nth-child(6) {
+    position: absolute;
+    transform: translateX(-205px) translateY(570px);
+  }
+  p:nth-child(7 ) {
+    position: absolute;
+    transform: translateX(255px) translateY(800px);
+  }
+  p:nth-child(8) {
+    position: absolute;
+    transform: translateX(535px) translateY(700px);
+  }
+  p:nth-child(9) {
+    position: absolute;
+    transform: translateX(615px) translateY(580px);
+  }
+  p:nth-child(10) {
+    position: absolute;
+    transform: translateX(665px) translateY(420px);
+  }
+  p:nth-child(11) {
+    position: absolute;
+    transform: translateX(605px) translateY(270px);
+  }
+  p:nth-child(12) {
+    position: absolute;
+    transform: translateX(500px) translateY(155px);
+  }
+}  
+
