@@ -24,8 +24,8 @@ header {
   height: 100px;
   width: 100px;
   margin: -6px -5px;
-  border-radius: 50%;
-  border: 3px solid rgb(46, 46, 187);
+  border-radius: 58%;
+  border: 4px solid rgb(46, 46, 187);
   padding: 12px;
 }
 .secondCircle {
@@ -52,14 +52,13 @@ header {
   background-color: rgb(46, 46, 187);
 
   p {
-    font-family: 'Times New Roman';
-    margin:15px auto;
+    font-family: "Times New Roman";
+    margin: 15px auto;
     color: rgb(245, 222, 178);
     font-size: 1%;
     white-space: nowrap;
   }
 }
-
 
 .gear {
   transform: scale(2);
@@ -68,9 +67,18 @@ header {
   height: 220px;
   margin: auto;
   z-index: 10;
-  background: rgb(245, 240, 240);
+  background: rgb(240, 244, 245);
   border-radius: 50%;
-  border: 2px solid grey;
+  border: 2px solid rgb(90, 191, 238);
+  animation: gearAnimation 4s linear;
+}
+@keyframes gearAnimation {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
 }
 
 .center {
@@ -83,7 +91,7 @@ header {
   height: 120px;
   background: white;
   border-radius: 50%;
-  border: 2px solid grey;
+  border: 2px solid rgb(172, 168, 168);
 }
 .tooth {
   position: absolute;
@@ -93,7 +101,7 @@ header {
   height: 18px;
   background-size: 100% 8px;
   background-position: 0 100%;
-  border: solid grey;
+  border: solid rgb(90, 191, 238);
   border-width: 2px 2px 0px;
   background: rgb(245, 240, 240);
 }
@@ -102,7 +110,6 @@ header {
   transform: rotate(30deg);
   top: -4px;
   left: 152px;
-  
 }
 
 .tooth:nth-child(3) {
@@ -120,7 +127,6 @@ header {
   transform: rotate(120deg);
   top: 160px;
   left: 196px;
-
 }
 .tooth:nth-child(6) {
   transform: rotate(150deg);
@@ -131,7 +137,6 @@ header {
   transform: rotate(180deg);
   top: 219px;
   left: 95px;
-
 }
 .tooth:nth-child(8) {
   transform: rotate(210deg);
@@ -158,165 +163,202 @@ header {
   top: -4px;
   left: 35px;
 }
+@keyframes circleAnimation {
+  0% {
+    transform: rotate(-180deg);
+  }
+  50% {
+    transform: rotate(-360deg);
+  }
+}
 
 .circleGroup {
+  transform: scale(0.9);
   position: relative;
   display: flex;
   width: 620px;
   height: 620px;
-  border: 1px solid grey;
+  border: 1px solid rgb(72, 158, 207);
   border-radius: 50%;
   justify-content: center;
+  animation: gearAnimation 4s linear;
 
   .circle {
     position: absolute;
     top: -0.5em;
     right: -0.5em;
-
     width: 70px;
     height: 70px;
     left: calc(50% - 25px);
     top: calc(50% - 25px);
     border-radius: 50%;
     background-color: white;
-    border: 3px solid grey;
+    border: 3px solid rgb(207, 206, 206);
     font-size: 35px;
 
-    .fa-user-shield {
+    .fa-user-shield,
+    .fa-globe,
+    .fa-file-alt,
+    .fa-file-signature,
+    .fa-handshake,
+    .fa-hand-holding-usd,
+    .fa-coins,
+    .fa-chess-knight,
+    .fa-phone-alt,
+    .fa-medkit,
+    .fa-envelope,
+    .fa-question {
       display: flex;
       justify-content: center;
       text-align: center;
-      margin:17px auto;
+      margin: 17px auto;
+      color: rgb(90, 191, 238);
     }
   }
 }
-  .circle:nth-child(1) {
-    transform: translateX(-10px) translateY(-320px);
-    position: absolute;
-    
-  }
+.circle:hover {
+  background: green;
+  transition: 1.5s;
+  cursor: pointer;
+}
+.circle:nth-child(1) {
+  transform: translateX(-10px) translateY(-320px);
+  position: absolute;
+}
 
-  .circle:nth-child(2) {
-    transform: translateX(-165px) translateY(-280px);
-    position: absolute;
-
-  }
-  .circle:nth-child(3) {
-    transform: translateX(-320px) translateY(-15px);
-    position: absolute;
- 
-  }
-  .circle:nth-child(4) {
-    transform: translateX(-280px) translateY(-170px);
-    position: absolute;
- 
-  }
-  .circle:nth-child(5) {
-    position: absolute;
-    transform: translateX(-275px) translateY(140px);
-
-  }
-  .circle:nth-child(6) {
-    position: absolute;
-    transform: translateX(-160px) translateY(255px);
-
-  }
-  .circle:nth-child(7) {
-    position: absolute;
-    transform: translateX(-10px) translateY(290px);
-
-  }
-  .circle:nth-child(8) {
-    position: absolute;
-    transform: translateX(145px) translateY(255px);
-
-  }
-  .circle:nth-child(9) {
-    position: absolute;
-    transform: translateX(255px) translateY(140px);
-
-  }
-  .circle:nth-child(10) {
-    position: absolute;
-    transform: translateX(300px) translateY(-10px);
-
-  }
-  .circle:nth-child(11) {
-    position: absolute;
-    transform: translateX(260px) translateY(-170px);
-
-  }
-  .circle:nth-child(12) {
-    position: absolute;
-    transform: translateX(140px) translateY(-280px);
-  }
-
-
-
+.circle:nth-child(2) {
+  transform: translateX(-165px) translateY(-280px);
+  position: absolute;
+}
+.circle:nth-child(3) {
+  transform: translateX(-320px) translateY(-15px);
+  position: absolute;
+}
+.circle:nth-child(4) {
+  transform: translateX(-280px) translateY(-170px);
+  position: absolute;
+}
+.circle:nth-child(5) {
+  position: absolute;
+  transform: translateX(-275px) translateY(140px);
+}
+.circle:nth-child(6) {
+  position: absolute;
+  transform: translateX(-160px) translateY(255px);
+}
+.circle:nth-child(7) {
+  position: absolute;
+  transform: translateX(-10px) translateY(290px);
+}
+.circle:nth-child(8) {
+  position: absolute;
+  transform: translateX(145px) translateY(255px);
+}
+.circle:nth-child(9) {
+  position: absolute;
+  transform: translateX(255px) translateY(140px);
+}
+.circle:nth-child(10) {
+  position: absolute;
+  transform: translateX(300px) translateY(-10px);
+}
+.circle:nth-child(11) {
+  position: absolute;
+  transform: translateX(260px) translateY(-170px);
+}
+.circle:nth-child(12) {
+  position: absolute;
+  transform: translateX(140px) translateY(-280px);
+}
 
 .wordCircle {
   position: relative;
+  transform: scale(1);
   display: grid;
   width: 100%;
   height: 900px;
   margin: auto;
   justify-content: center;
+  animation: wordOpacity 5s linear;
+}
+@keyframes wordOpacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes fadefromdown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .paragraphs {
   position: relative;
+  animation: fadefromdown 5s linear;
+  p:nth-child(n) {
+    position: absolute;
+  }
 
   p:nth-child(1) {
-    transform: translateX(225px) translateY(60px);
-    position: absolute;
+    transform: translateX(235px) translateY(90px);
   }
 
   p:nth-child(2) {
-    transform: translateX(-25px) translateY(155px);
-    position: absolute;
+    transform: translateX(15px) translateY(180px);
   }
   p:nth-child(3) {
-    transform: translateX(-225px) translateY(270px);
-    position: absolute;
+    transform: translateX(-175px) translateY(280px);
   }
   p:nth-child(4) {
-    transform: translateX(-170px) translateY(700px);
-    position: absolute;
+    transform: translateX(-140px) translateY(670px);
   }
   p:nth-child(5) {
-    position: absolute;
-    transform: translateX(-165px) translateY(420px);
+    transform: translateX(-115px) translateY(420px);
   }
   p:nth-child(6) {
-    position: absolute;
-    transform: translateX(-205px) translateY(570px);
+    transform: translateX(-165px) translateY(570px);
   }
   p:nth-child(7) {
-    position: absolute;
-    transform: translateX(255px) translateY(800px);
+    transform: translateX(265px) translateY(750px);
   }
   p:nth-child(8) {
-    position: absolute;
-    transform: translateX(535px) translateY(700px);
+    transform: translateX(515px) translateY(680px);
   }
   p:nth-child(9) {
-    position: absolute;
-    transform: translateX(615px) translateY(580px);
+    transform: translateX(605px) translateY(570px);
   }
   p:nth-child(10) {
-    position: absolute;
-    transform: translateX(665px) translateY(420px);
+    transform: translateX(635px) translateY(420px);
   }
   p:nth-child(11) {
-    position: absolute;
     transform: translateX(605px) translateY(270px);
   }
   p:nth-child(12) {
-    position: absolute;
-    transform: translateX(500px) translateY(155px);
+    transform: translateX(500px) translateY(175px);
   }
 }
 footer {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
   padding: 20px;
@@ -340,10 +382,8 @@ footer {
   width: 760px;
   margin: auto;
   padding: 5px;
-  
 
   input {
-   
     max-width: 100%;
     width: 220px;
     height: 40px;
@@ -364,7 +404,10 @@ footer {
   }
   .checkBox {
     display: flex;
-    width: 100%;
+    max-width: 100%;
+    width: 600px;
+
+    margin: auto;
     text-align: center;
     justify-content: center;
     font-size: 18px;
@@ -381,20 +424,19 @@ footer {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
   .gear {
-    transform: scale(1.1);
+    transform: scale(1.8);
   }
   form {
-    max-width: 80%;
+    max-width: 70%;
     display: block;
-   justify-content: center;
+    justify-content: center;
     margin: auto;
     align-items: center;
   }
   .footerContainer {
-   
-    input { 
+    input {
       width: 400px;
       height: 40px;
       margin: auto;
@@ -413,11 +455,10 @@ footer {
       width: 400px;
     }
     .checkBox {
-      display: flex;
-      width: 100%;
-      text-align: center;
-      justify-content: center;
-      font-size: 18px;
+      p {
+        font-size: 10px;
+        white-space: nowrap;
+      }
     }
     button {
       width: 150px;
@@ -428,6 +469,101 @@ footer {
       color: wheat;
       font-size: 15px;
       font-weight: 700;
+    }
+  }
+  .circleGroup {
+    position: relative;
+    transform: scale(0.6);
+    display: flex;
+    width: 620px;
+    height: 620px;
+    border: 0.5px solid grey;
+    border-radius: 50%;
+    justify-content: center;
+
+    .circle {
+      position: absolute;
+      top: -0.5em;
+      right: -0.5em;
+
+      width: 70px;
+      height: 70px;
+      left: calc(50% - 25px);
+      top: calc(50% - 25px);
+      border-radius: 50%;
+      background-color: white;
+      border: 3px solid grey;
+      font-size: 35px;
+
+      i {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 17px auto;
+      }
+    }
+  }
+  .wordCircle {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+  }
+  .paragraphs {
+    position: relative;
+    display: none;
+
+    p:nth-child(1) {
+      transform: translateX(225px) translateY(60px);
+      position: absolute;
+      color: red;
+    }
+
+    p:nth-child(2) {
+      transform: translateX(-25px) translateY(155px);
+      position: absolute;
+    }
+    p:nth-child(3) {
+      transform: translateX(-225px) translateY(270px);
+      position: absolute;
+    }
+    p:nth-child(4) {
+      transform: translateX(-170px) translateY(700px);
+      position: absolute;
+    }
+    p:nth-child(5) {
+      position: absolute;
+      transform: translateX(-165px) translateY(420px);
+    }
+    p:nth-child(6) {
+      position: absolute;
+      transform: translateX(-205px) translateY(570px);
+    }
+    p:nth-child(7) {
+      position: absolute;
+      transform: translateX(255px) translateY(800px);
+    }
+    p:nth-child(8) {
+      position: absolute;
+      transform: translateX(535px) translateY(700px);
+    }
+    p:nth-child(9) {
+      position: absolute;
+      transform: translateX(615px) translateY(580px);
+    }
+    p:nth-child(10) {
+      position: absolute;
+      transform: translateX(665px) translateY(420px);
+    }
+    p:nth-child(11) {
+      position: absolute;
+      transform: translateX(605px) translateY(270px);
+    }
+    p:nth-child(12) {
+      position: absolute;
+      transform: translateX(500px) translateY(155px);
     }
   }
 }
