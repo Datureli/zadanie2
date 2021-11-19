@@ -25,55 +25,41 @@ header {
   width: 100px;
   margin: -6px -5px;
   border-radius: 50%;
-  border: 3px solid rgb(87, 87, 168);
+  border: 3px solid rgb(46, 46, 187);
   padding: 12px;
 }
 .secondCircle {
   margin: -14px auto;
   border-radius: 50%;
-  width: 50px;
+  width: 60px;
   height: 123px;
-  border: 3px solid rgb(87, 87, 168);
+  border: 3px solid rgb(46, 46, 187);
 }
 .verticalLine {
   position: absolute;
-  margin-left: 23px;
-  border: 1px solid rgb(87, 87, 168);
-  background-color: rgb(87, 87, 168);
+  margin-left: 28px;
+  border: 1px solid rgb(46, 46, 187);
+  background-color: rgb(46, 46, 187);
   width: 1px;
-  height: 123px;
+  height: 124px;
 }
 .horizontalBackground {
   position: absolute;
-  width: 127px;
-  height: 45px;
-  margin: 38px -38px;
-  border-radius: 11px;
-  background-color: rgb(87, 87, 168);
+  width: 124.5px;
+  height: 50px;
+  margin: 38px -32.1px;
+  border-radius: 9px;
+  background-color: rgb(46, 46, 187);
 
   p {
-    font-weight: 700;
-    text-align: center;
-    justify-content: center;
-    color: wheat;
-    font-size: 10px;
+    font-family: 'Times New Roman';
+    margin:15px auto;
+    color: rgb(245, 222, 178);
+    font-size: 1%;
+    white-space: nowrap;
   }
 }
-footer {
-  width: 100%;
-  height: auto;
-  background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
-  padding: 20px;
 
-  h2 {
-    color: white;
-    font-weight: 900;
-  }
-  p {
-    color: white;
-  }
-}
 
 .gear {
   transform: scale(2);
@@ -176,8 +162,8 @@ footer {
 .circleGroup {
   position: relative;
   display: flex;
-  width: 600px;
-  height: 600px;
+  width: 620px;
+  height: 620px;
   border: 1px solid grey;
   border-radius: 50%;
   justify-content: center;
@@ -186,7 +172,7 @@ footer {
     position: absolute;
     top: -0.5em;
     right: -0.5em;
-    z-index: 10;
+
     width: 70px;
     height: 70px;
     left: calc(50% - 25px);
@@ -197,8 +183,10 @@ footer {
     font-size: 35px;
 
     .fa-user-shield {
-      color: red;
-
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin:17px auto;
     }
   }
 }
@@ -263,50 +251,8 @@ footer {
     transform: translateX(140px) translateY(-280px);
   }
 
-.footerContainer {
-  width: 760px;
-  height: auto;
-  margin: auto;
-  padding: 5px;
 
-  input {
-    width: 220px;
-    height: 40px;
-    margin: 5px;
-    padding-left: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-  }
-  textarea {
-    width: 722px;
-    margin: 5px auto;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    padding: 5px;
-  }
-  .checkBox {
-    display: flex;
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    font-size: 18px;
-  }
-  button {
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    background: rgb(25, 151, 103);
-    border: none;
-    color: wheat;
-    font-size: 15px;
-    font-weight: 700;
-  }
-}
-#check {
-  width: 20px;
-}
+
 
 .wordCircle {
   position: relative;
@@ -367,5 +313,121 @@ footer {
   p:nth-child(12) {
     position: absolute;
     transform: translateX(500px) translateY(155px);
+  }
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+  padding: 20px;
+
+  h2 {
+    color: white;
+    font-weight: 900;
+  }
+  p {
+    color: white;
+  }
+
+  #check {
+    width: 20px;
+  }
+}
+.footerContainer {
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  width: 760px;
+  margin: auto;
+  padding: 5px;
+  
+
+  input {
+   
+    max-width: 100%;
+    width: 220px;
+    height: 40px;
+    margin: 5px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+  textarea {
+    max-width: 100%;
+    width: 722px;
+    margin: 5px auto;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+  }
+  .checkBox {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+  button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(25, 151, 103);
+    border: none;
+    color: wheat;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .gear {
+    transform: scale(1.1);
+  }
+  form {
+    max-width: 80%;
+    display: block;
+   justify-content: center;
+    margin: auto;
+    align-items: center;
+  }
+  .footerContainer {
+   
+    input { 
+      width: 400px;
+      height: 40px;
+      margin: auto;
+      padding-left: 5px;
+      color: white;
+      background: transparent;
+      border-radius: 0;
+      border-bottom: 1px solid black;
+    }
+    textarea {
+      background: transparent;
+      border: 1px solid black;
+      color: white;
+      display: block;
+      margin: 15px auto 5px;
+      width: 400px;
+    }
+    .checkBox {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    button {
+      width: 150px;
+      height: 50px;
+      border-radius: 5px;
+      background: rgb(25, 151, 103);
+      border: none;
+      color: wheat;
+      font-size: 15px;
+      font-weight: 700;
+    }
   }
 }
