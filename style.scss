@@ -66,7 +66,6 @@ header {
   width: 220px;
   height: 220px;
   margin: auto;
-  z-index: 10;
   background: rgb(240, 244, 245);
   border-radius: 50%;
   border: 2px solid rgb(90, 191, 238);
@@ -223,53 +222,44 @@ header {
   }
 }
 
+.circle:nth-child(n) {
+  position: absolute;
+}
 .circle:nth-child(1) {
   transform: translateX(-10px) translateY(-320px);
-  position: absolute;
 }
 
 .circle:nth-child(2) {
   transform: translateX(-165px) translateY(-280px);
-  position: absolute;
 }
 .circle:nth-child(3) {
   transform: translateX(-320px) translateY(-15px);
-  position: absolute;
 }
 .circle:nth-child(4) {
   transform: translateX(-280px) translateY(-170px);
-  position: absolute;
 }
 .circle:nth-child(5) {
-  position: absolute;
   transform: translateX(-275px) translateY(140px);
 }
 .circle:nth-child(6) {
-  position: absolute;
   transform: translateX(-160px) translateY(255px);
 }
 .circle:nth-child(7) {
-  position: absolute;
   transform: translateX(-10px) translateY(290px);
 }
 .circle:nth-child(8) {
-  position: absolute;
   transform: translateX(145px) translateY(255px);
 }
 .circle:nth-child(9) {
-  position: absolute;
   transform: translateX(255px) translateY(140px);
 }
 .circle:nth-child(10) {
-  position: absolute;
   transform: translateX(300px) translateY(-10px);
 }
 .circle:nth-child(11) {
-  position: absolute;
   transform: translateX(260px) translateY(-170px);
 }
 .circle:nth-child(12) {
-  position: absolute;
   transform: translateX(140px) translateY(-280px);
 }
 
@@ -294,16 +284,7 @@ header {
     opacity: 1;
   }
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-}
+
 @keyframes fadefromdown {
   from {
     opacity: 0;
@@ -415,7 +396,6 @@ footer {
     display: flex;
     max-width: 100%;
     width: 600px;
-
     margin: auto;
     text-align: center;
     justify-content: center;
@@ -512,12 +492,7 @@ footer {
     }
   }
   .wordCircle {
-    position: relative;
-    display: grid;
-    width: 100%;
     height: auto;
-    margin: auto;
-    justify-content: center;
   }
   .paragraphs {
     position: relative;
@@ -525,174 +500,153 @@ footer {
 
     p:nth-child(1) {
       transform: translateX(225px) translateY(60px);
-      position: absolute;
     }
 
     p:nth-child(2) {
       transform: translateX(-25px) translateY(155px);
-      position: absolute;
     }
     p:nth-child(3) {
       transform: translateX(-225px) translateY(270px);
-      position: absolute;
     }
     p:nth-child(4) {
       transform: translateX(-170px) translateY(700px);
-      position: absolute;
     }
     p:nth-child(5) {
-      position: absolute;
       transform: translateX(-165px) translateY(420px);
     }
     p:nth-child(6) {
-      position: absolute;
       transform: translateX(-205px) translateY(570px);
     }
     p:nth-child(7) {
-      position: absolute;
       transform: translateX(255px) translateY(800px);
     }
     p:nth-child(8) {
-      position: absolute;
       transform: translateX(535px) translateY(700px);
     }
     p:nth-child(9) {
-      position: absolute;
       transform: translateX(615px) translateY(580px);
     }
     p:nth-child(10) {
-      position: absolute;
       transform: translateX(665px) translateY(420px);
     }
     p:nth-child(11) {
-      position: absolute;
       transform: translateX(605px) translateY(270px);
     }
     p:nth-child(12) {
-      position: absolute;
       transform: translateX(500px) translateY(155px);
     }
   }
+  .circle:nth-child(n) {
+    position: absolute;
+  }
   .circle:nth-child(1) {
     transform: translateX(-10px) translateY(-320px);
-    position: absolute;
 
-    &:hover:after  {
+    &:hover:after {
       content: "Zarządzanie projektami";
       display: block;
       margin-top: 10px;
-      font-size:15px;
+      font-size: 15px;
     }
   }
 
   .circle:nth-child(2) {
     transform: translateX(-165px) translateY(-280px);
-    position: absolute;
 
-    &:hover:after  {
+    &:hover:after {
       content: "marketing 360*";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(3) {
     transform: translateX(-320px) translateY(-15px);
-    position: absolute;
 
-    &:hover:after  {
+    &:hover:after {
       content: "Ubezpieczenia międzynarodowe";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(4) {
     transform: translateX(-280px) translateY(-170px);
-    position: absolute;
 
-    &:hover:after  {
+    &:hover:after {
       content: "CrowdFunding";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(5) {
-    position: absolute;
     transform: translateX(-275px) translateY(140px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "Podnoszenie produktywności";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(6) {
-    position: absolute;
     transform: translateX(-160px) translateY(255px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "Nieruchomości";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(7) {
-    position: absolute;
     transform: translateX(-10px) translateY(290px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "Pozyskiwanie inwestorów(M&A)";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(8) {
-    position: absolute;
     transform: translateX(145px) translateY(255px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "Finansowanie handlu międzynarodowego";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(9) {
-    position: absolute;
     transform: translateX(255px) translateY(140px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "Prawo międzynarodowe";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(10) {
-    position: absolute;
     transform: translateX(300px) translateY(-10px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "międzynarodowa księgowość,kadry i podatki";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(11) {
-    position: absolute;
     transform: translateX(260px) translateY(-170px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "Dotacje i granty międzynarodowe";
       display: block;
-      font-size:15px;
+      font-size: 15px;
     }
   }
   .circle:nth-child(12) {
-    position: absolute;
     transform: translateX(140px) translateY(-280px);
 
-    &:hover:after  {
+    &:hover:after {
       content: "Dotacje i granty międzynarodowe";
       display: block;
-      font-size:15px;
+      font-size: 15px;
       white-space: nowrap;
     }
   }
