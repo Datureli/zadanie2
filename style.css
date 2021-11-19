@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html,
 body {
   -webkit-box-sizing: border-box;
@@ -261,6 +262,13 @@ header p {
   font-size: 35px;
 }
 
+.circleGroup .circle:hover {
+  background: green;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
 .circleGroup .circle .fa-user-shield,
 .circleGroup .circle .fa-globe,
 .circleGroup .circle .fa-file-alt,
@@ -282,13 +290,6 @@ header p {
   text-align: center;
   margin: 17px auto;
   color: #5abfee;
-}
-
-.circle:hover {
-  background: green;
-  -webkit-transition: 1.5s;
-  transition: 1.5s;
-  cursor: pointer;
 }
 
 .circle:nth-child(1) {
@@ -457,6 +458,12 @@ header p {
   position: relative;
   -webkit-animation: fadefromdown 5s linear;
           animation: fadefromdown 5s linear;
+}
+
+.paragraphs a {
+  text-decoration: none;
+  color: #050404;
+  font-weight: 700;
 }
 
 .paragraphs p:nth-child(n) {
@@ -650,8 +657,8 @@ footer #check {
   }
   .circleGroup {
     position: relative;
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -705,7 +712,6 @@ footer #check {
     -webkit-transform: translateX(225px) translateY(60px);
             transform: translateX(225px) translateY(60px);
     position: absolute;
-    color: red;
   }
   .paragraphs p:nth-child(2) {
     -webkit-transform: translateX(-25px) translateY(155px);
@@ -761,6 +767,128 @@ footer #check {
     position: absolute;
     -webkit-transform: translateX(500px) translateY(155px);
             transform: translateX(500px) translateY(155px);
+  }
+  .circle:nth-child(1) {
+    -webkit-transform: translateX(-10px) translateY(-320px);
+            transform: translateX(-10px) translateY(-320px);
+    position: absolute;
+  }
+  .circle:nth-child(1):hover:after {
+    content: "Zarządzanie projektami";
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .circle:nth-child(2) {
+    -webkit-transform: translateX(-165px) translateY(-280px);
+            transform: translateX(-165px) translateY(-280px);
+    position: absolute;
+  }
+  .circle:nth-child(2):hover:after {
+    content: "marketing 360*";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(3) {
+    -webkit-transform: translateX(-320px) translateY(-15px);
+            transform: translateX(-320px) translateY(-15px);
+    position: absolute;
+  }
+  .circle:nth-child(3):hover:after {
+    content: "Ubezpieczenia międzynarodowe";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(4) {
+    -webkit-transform: translateX(-280px) translateY(-170px);
+            transform: translateX(-280px) translateY(-170px);
+    position: absolute;
+  }
+  .circle:nth-child(4):hover:after {
+    content: "CrowdFunding";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(5) {
+    position: absolute;
+    -webkit-transform: translateX(-275px) translateY(140px);
+            transform: translateX(-275px) translateY(140px);
+  }
+  .circle:nth-child(5):hover:after {
+    content: "Podnoszenie produktywności";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(6) {
+    position: absolute;
+    -webkit-transform: translateX(-160px) translateY(255px);
+            transform: translateX(-160px) translateY(255px);
+  }
+  .circle:nth-child(6):hover:after {
+    content: "Nieruchomości";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(7) {
+    position: absolute;
+    -webkit-transform: translateX(-10px) translateY(290px);
+            transform: translateX(-10px) translateY(290px);
+  }
+  .circle:nth-child(7):hover:after {
+    content: "Pozyskiwanie inwestorów(M&A)";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(8) {
+    position: absolute;
+    -webkit-transform: translateX(145px) translateY(255px);
+            transform: translateX(145px) translateY(255px);
+  }
+  .circle:nth-child(8):hover:after {
+    content: "Finansowanie handlu międzynarodowego";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(9) {
+    position: absolute;
+    -webkit-transform: translateX(255px) translateY(140px);
+            transform: translateX(255px) translateY(140px);
+  }
+  .circle:nth-child(9):hover:after {
+    content: "Prawo międzynarodowe";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(10) {
+    position: absolute;
+    -webkit-transform: translateX(300px) translateY(-10px);
+            transform: translateX(300px) translateY(-10px);
+  }
+  .circle:nth-child(10):hover:after {
+    content: "międzynarodowa księgowość,kadry i podatki";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(11) {
+    position: absolute;
+    -webkit-transform: translateX(260px) translateY(-170px);
+            transform: translateX(260px) translateY(-170px);
+  }
+  .circle:nth-child(11):hover:after {
+    content: "Dotacje i granty międzynarodowe";
+    display: block;
+    font-size: 15px;
+  }
+  .circle:nth-child(12) {
+    position: absolute;
+    -webkit-transform: translateX(140px) translateY(-280px);
+            transform: translateX(140px) translateY(-280px);
+  }
+  .circle:nth-child(12):hover:after {
+    content: "Dotacje i granty międzynarodowe";
+    display: block;
+    font-size: 15px;
+    white-space: nowrap;
   }
 }
 /*# sourceMappingURL=style.css.map */
